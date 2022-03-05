@@ -16,6 +16,7 @@
         "lodash": "^4.17.21",
         "postcss": "^8.4.7",
         "postcss-cli": "^9.1.0",
+        "postcss-hexrgba": "^2.0.1",
         "postcss-import": "^14.0.2",
         "postcss-loader": "^6.2.1",
         "postcss-mixins": "^9.0.2",
