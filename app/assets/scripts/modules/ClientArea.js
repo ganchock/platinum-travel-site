@@ -40,7 +40,7 @@ class ClientArea {
                 <input type="text" class="client-area__input" placeholder="Нууц үгээ бичнэ үү" />
                 <button class="btn btn--orange">Нэвтрэх</button>
             </form>
-            <div class="client-area_content-area"></div>
+            <div class="client-area__content-area"></div>
         </div>
     </div>`
         );
