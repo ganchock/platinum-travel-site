@@ -49,21 +49,20 @@ if (currentTask == "dev") {
             },
         },
     });
-    cssConfig.use.unshift("style-loader")(
-            (config.output = {
-                filename: "bundled.js",
-                path: path.resolve(__dirname, "app"),
-            })
-        )(
-            (config.devServer = {
-                watchFiles: ["./app/**/*.html"],
-                static: path.join(__dirname, "app"),
-                hot: true,
-                port: 3000,
-                host: "0.0.0.0",
-            })
-        ),
-        (config.mode = "development");
+    cssConfig.use.unshift("style-loader");
+    config.output = {
+        filename: "bundled.js",
+        path: path.resolve(__dirname, "app"),
+    };
+    config.devServer = {
+        watchFiles: ["./app/**/*.html"],
+        static: path.join(__dirname, "app"),
+        hot: true,
+        port: 3000,
+        host: "0.0.0.0",
+    };
+
+    config.mode = "development";
 }
 if (currentTask == "build") {
     cssConfig.use.unshift(MiniCssExtractPlugin.loader);
